@@ -15,3 +15,24 @@ To fix this this project combines `pex` with `build` to reproducibly build wheel
 Example
 ```
 ```
+
+## Development Notes
+### Dependencies
+To update the version of pex or build edit `requirements.in` then produce a new lockfile by running:
+```
+env PEX_SCRIPT=pex3 pex lock create --resolver-version pip-2020-resolver --pip-version 22.3 --no-build  -r requirements.in --indent 2 --output pex.lock
+```
+
+### Building the binary
+To build the final binary from the lockfile and `main.py` run:
+```
+pex --lock pex.lock --exe main.py --python-shebang '/usr/bin/env python3' --include-tools -o main.pex
+```
+
+This should build a pex that works on Python 3.7+
+
+### Venv for development
+After building `main.pex` create a venv by running:
+```
+PEX_TOOLS=1 ./main.pex venv -b prepend --rm pex -f ./venv
+```
