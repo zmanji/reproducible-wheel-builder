@@ -53,7 +53,7 @@ $ main.pex --lock setuptools.lock --src ./pyzstd-0.15.3 --out ./out --dist wheel
 The same python that is used to run the script is used to build the wheel, by default it's the first `python3` on the PATH but that can be changed with `PEX_PYTHON`. This can be handy for building the same wheel but with different Pythons. 
 
 ``` shell
-PEX_PYTHON=~/.pyenv/versions/3.9.13/bin/python3.9 ../main.pex --lock setuptools.lock --src ./pyzstd-0.15.3 --out ./out --dist wheel --quiet
+PEX_PYTHON=~/.pyenv/versions/3.9.13/bin/python3.9 main.pex --lock setuptools.lock --src ./pyzstd-0.15.3 --out ./out --dist wheel --quiet
 ```
 ## Development Notes
 ### Dependencies
