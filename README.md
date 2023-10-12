@@ -65,10 +65,10 @@ env PEX_SCRIPT=pex3 pex lock create --resolver-version pip-2020-resolver --pip-v
 ### Building the binary
 To build the final binary from the lockfile and `main.py` run:
 ```
-pex --lock pex.lock --exe main.py --python-shebang '/usr/bin/env python3' --include-tools -o main.pex
+pex --lock pex.lock --exe main.py --python-shebang '/usr/bin/env python3' --include-tools -o main.pex --platform manylinux2014_x86_64-cp-312-cp312 --platform manylinux2014_x86_64-cp-311-cp311 --platform manylinux2014_x86_64-cp-310-cp310
 ```
 
-This should build a pex that works on Python 3.7+
+This should build a pex that works on Python 3.10+
 
 ### Venv for development
 After building `main.pex` create a venv by running:
