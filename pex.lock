@@ -11,18 +11,18 @@
           "artifacts": [
             {
               "algorithm": "sha256",
-              "hash": "af266720050a66c893a6096a2f410989eeac74ff9a68ba194b3f6473e8e26171",
-              "url": "https://files.pythonhosted.org/packages/58/91/17b00d5fac63d3dca605f1b8269ba3c65e98059e1fd99d00283e42a454f0/build-0.10.0-py3-none-any.whl"
+              "hash": "589bf99a67df7c9cf07ec0ac0e5e2ea5d4b37ac63301c4986d1acb126aa83f8f",
+              "url": "https://files.pythonhosted.org/packages/93/dd/b464b728b866aaa62785a609e0dd8c72201d62c5f7c53e7c20f4dceb085f/build-1.0.3-py3-none-any.whl"
             }
           ],
           "project_name": "build",
           "requires_dists": [
             "colorama; os_name == \"nt\"",
             "filelock>=3; extra == \"test\"",
-            "furo>=2021.08.31; extra == \"docs\"",
-            "importlib-metadata>=0.22; python_version < \"3.8\"",
+            "furo>=2023.08.17; extra == \"docs\"",
+            "importlib-metadata>=4.6; python_version < \"3.10\"",
             "importlib-metadata>=5.1; extra == \"typing\"",
-            "mypy==0.991; extra == \"typing\"",
+            "mypy~=1.5.0; extra == \"typing\"",
             "packaging>=19.0",
             "pyproject_hooks",
             "pytest-cov>=2.12; extra == \"test\"",
@@ -31,11 +31,13 @@
             "pytest-xdist>=1.34; extra == \"test\"",
             "pytest>=6.2.4; extra == \"test\"",
             "setuptools>=42.0.0; extra == \"test\" and python_version < \"3.10\"",
-            "setuptools>=56.0.0; extra == \"test\" and python_version >= \"3.10\"",
+            "setuptools>=56.0.0; extra == \"test\" and python_version == \"3.10\"",
+            "setuptools>=56.0.0; extra == \"test\" and python_version == \"3.11\"",
+            "setuptools>=67.8.0; extra == \"test\" and python_version >= \"3.12\"",
             "sphinx-argparse-cli>=1.5; extra == \"docs\"",
             "sphinx-autodoc-typehints>=1.10; extra == \"docs\"",
-            "sphinx~=4.0; extra == \"docs\"",
-            "toml>=0.10.0; extra == \"test\"",
+            "sphinx-issues>=3.0.0; extra == \"docs\"",
+            "sphinx~=7.0; extra == \"docs\"",
             "tomli; extra == \"typing\"",
             "tomli>=1.1.0; python_version < \"3.11\"",
             "typing-extensions>=3.7.4.3; extra == \"typing\"",
@@ -43,7 +45,7 @@
             "wheel>=0.36.0; extra == \"test\""
           ],
           "requires_python": ">=3.7",
-          "version": "0.10.0"
+          "version": "1.0.3"
         },
         {
           "artifacts": [
@@ -87,21 +89,34 @@
           ],
           "requires_python": ">=3.7",
           "version": "1.0.0"
+        },
+        {
+          "artifacts": [
+            {
+              "algorithm": "sha256",
+              "hash": "939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc",
+              "url": "https://files.pythonhosted.org/packages/97/75/10a9ebee3fd790d20926a90a2547f0bf78f371b2f13aa822c759680ca7b9/tomli-2.0.1-py3-none-any.whl"
+            }
+          ],
+          "project_name": "tomli",
+          "requires_dists": [],
+          "requires_python": ">=3.7",
+          "version": "2.0.1"
         }
       ],
       "platform_tag": [
-        "cp311",
-        "cp311",
-        "macosx_13_0_arm64"
+        "cp310",
+        "cp310",
+        "manylinux_2_35_x86_64"
       ]
     }
   ],
   "path_mappings": {},
-  "pex_version": "2.1.147",
+  "pex_version": "2.1.148",
   "pip_version": "22.3",
   "prefer_older_binary": false,
   "requirements": [
-    "build==0.10.0",
+    "build==1.0.3",
     "pex==2.1.147"
   ],
   "requires_python": [],
