@@ -59,7 +59,7 @@ PEX_PYTHON=~/.pyenv/versions/3.9.13/bin/python3.9 main.pex --lock setuptools.loc
 ### Dependencies
 To update the version of pex or build edit `requirements.in` then produce a new lockfile by running:
 ```
-env PEX_SCRIPT=pex3 pex lock create --resolver-version pip-2020-resolver --pip-version 22.3 --no-build  -r requirements.in --indent 2 --output pex.lock
+env PEX_SCRIPT=pex3 pex lock create --pip-version 23.2 --no-build  -r requirements.in --indent 2 --output pex.lock
 ```
 
 ### Building the binary

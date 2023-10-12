@@ -107,13 +107,13 @@
       "platform_tag": [
         "cp310",
         "cp310",
-        "manylinux_2_35_x86_64"
+        "macosx_13_0_arm64"
       ]
     }
   ],
   "path_mappings": {},
   "pex_version": "2.1.148",
-  "pip_version": "22.3",
+  "pip_version": "23.2",
   "prefer_older_binary": false,
   "requirements": [
     "build==1.0.3",
