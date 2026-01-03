@@ -4,6 +4,8 @@
   "allow_wheels": true,
   "build_isolation": true,
   "constraints": [],
+  "elide_unused_requires_dist": false,
+  "excluded": [],
   "locked_resolves": [
     {
       "locked_requirements": [
@@ -11,61 +13,44 @@
           "artifacts": [
             {
               "algorithm": "sha256",
-              "hash": "8ed0851ee76e6e38adce47e4bee3b51c771d86c64cf578d0c2245567ee200e73",
-              "url": "https://files.pythonhosted.org/packages/4f/81/4849059526d02fcc9708e19346dd740e8b9edd2f0675ea7c38302d6729df/build-1.1.1-py3-none-any.whl"
+              "hash": "7145f0b5061ba90a1500d60bd1b13ca0a8a4cebdd0cc16ed8adf1c0e739f43b4",
+              "url": "https://files.pythonhosted.org/packages/cb/8c/2b30c12155ad8de0cf641d76a8b396a16d2c36bc6d50b621a62b7c4567c1/build-1.3.0-py3-none-any.whl"
             }
           ],
           "project_name": "build",
           "requires_dists": [
             "colorama; os_name == \"nt\"",
-            "filelock>=3; extra == \"test\"",
-            "furo>=2023.08.17; extra == \"docs\"",
             "importlib-metadata>=4.6; python_full_version < \"3.10.2\"",
-            "importlib-metadata>=5.1; extra == \"typing\"",
-            "mypy~=1.5.0; extra == \"typing\"",
-            "packaging>=19.0",
+            "packaging>=19.1",
             "pyproject_hooks",
-            "pytest-cov>=2.12; extra == \"test\"",
-            "pytest-mock>=2; extra == \"test\"",
-            "pytest-rerunfailures>=9.1; extra == \"test\"",
-            "pytest-xdist>=1.34; extra == \"test\"",
-            "pytest>=6.2.4; extra == \"test\"",
-            "setuptools>=42.0.0; extra == \"test\" and python_version < \"3.10\"",
-            "setuptools>=56.0.0; extra == \"test\" and python_version == \"3.10\"",
-            "setuptools>=56.0.0; extra == \"test\" and python_version == \"3.11\"",
-            "setuptools>=67.8.0; extra == \"test\" and python_version >= \"3.12\"",
-            "sphinx-argparse-cli>=1.5; extra == \"docs\"",
-            "sphinx-autodoc-typehints>=1.10; extra == \"docs\"",
-            "sphinx-issues>=3.0.0; extra == \"docs\"",
-            "sphinx~=7.0; extra == \"docs\"",
-            "tomli; extra == \"typing\"",
             "tomli>=1.1.0; python_version < \"3.11\"",
-            "typing-extensions>=3.7.4.3; extra == \"typing\"",
-            "virtualenv>=20.0.35; extra == \"virtualenv\"",
-            "wheel>=0.36.0; extra == \"test\""
+            "uv>=0.1.18; extra == \"uv\"",
+            "virtualenv>=20.11; extra == \"virtualenv\" and python_version < \"3.10\"",
+            "virtualenv>=20.17; extra == \"virtualenv\" and (python_version >= \"3.10\" and python_version < \"3.14\")",
+            "virtualenv>=20.31; extra == \"virtualenv\" and python_version >= \"3.14\""
           ],
-          "requires_python": ">=3.7",
-          "version": "1.1.1"
+          "requires_python": ">=3.9",
+          "version": "1.3.0"
         },
         {
           "artifacts": [
             {
               "algorithm": "sha256",
-              "hash": "5b8f2217dbdbd2f7f384c41c628544e6d52f2d0f53c6d0c3ea61aa5d1d7ff124",
-              "url": "https://files.pythonhosted.org/packages/08/aa/cc0199a5f0ad350994d660967a8efb233fe0416e4639146c089643407ce6/packaging-24.1-py3-none-any.whl"
+              "hash": "29572ef2b1f17581046b3a2227d5c611fb25ec70ca1ba8554b24b0e69331a484",
+              "url": "https://files.pythonhosted.org/packages/20/12/38679034af332785aac8774540895e234f4d07f7545804097de4b666afd8/packaging-25.0-py3-none-any.whl"
             }
           ],
           "project_name": "packaging",
           "requires_dists": [],
           "requires_python": ">=3.8",
-          "version": "24.1"
+          "version": "25.0"
         },
         {
           "artifacts": [
             {
               "algorithm": "sha256",
-              "hash": "f9bb815340481f58276e641fcac84a0b2b6d9327fe675e1ec620d11062636003",
-              "url": "https://files.pythonhosted.org/packages/17/6f/5bc8739c9b1bb6ddd9885606278740d6f2b84b457730886fc17a46cb34e3/pex-2.20.3-py2.py3-none-any.whl"
+              "hash": "05dae618e9c800a47be4551f66f5a0d3eed56778e9481c0a85235d3b8023ec69",
+              "url": "https://files.pythonhosted.org/packages/55/ca/bda0b65991699dc9596a575ba495d1b910d07da947d29e10015bbb4f1ded/pex-2.77.0-py3.py312-none-any.whl"
             }
           ],
           "project_name": "pex",
@@ -73,8 +58,8 @@
             "psutil>=5.3; extra == \"management\"",
             "subprocess32>=3.2.7; python_version < \"3\" and extra == \"subprocess\""
           ],
-          "requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,<3.14,>=2.7",
-          "version": "2.20.3"
+          "requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,<3.16,>=2.7",
+          "version": "2.77.0"
         },
         {
           "artifacts": [
@@ -88,40 +73,107 @@
           "requires_dists": [],
           "requires_python": ">=3.7",
           "version": "1.2.0"
+        }
+      ],
+      "marker": null,
+      "platform_tag": [
+        "cp313",
+        "cp313",
+        "macosx_15_0_arm64"
+      ]
+    },
+    {
+      "locked_requirements": [
+        {
+          "artifacts": [
+            {
+              "algorithm": "sha256",
+              "hash": "7145f0b5061ba90a1500d60bd1b13ca0a8a4cebdd0cc16ed8adf1c0e739f43b4",
+              "url": "https://files.pythonhosted.org/packages/cb/8c/2b30c12155ad8de0cf641d76a8b396a16d2c36bc6d50b621a62b7c4567c1/build-1.3.0-py3-none-any.whl"
+            }
+          ],
+          "project_name": "build",
+          "requires_dists": [
+            "colorama; os_name == \"nt\"",
+            "importlib-metadata>=4.6; python_full_version < \"3.10.2\"",
+            "packaging>=19.1",
+            "pyproject_hooks",
+            "tomli>=1.1.0; python_version < \"3.11\"",
+            "uv>=0.1.18; extra == \"uv\"",
+            "virtualenv>=20.11; extra == \"virtualenv\" and python_version < \"3.10\"",
+            "virtualenv>=20.17; extra == \"virtualenv\" and (python_version >= \"3.10\" and python_version < \"3.14\")",
+            "virtualenv>=20.31; extra == \"virtualenv\" and python_version >= \"3.14\""
+          ],
+          "requires_python": ">=3.9",
+          "version": "1.3.0"
         },
         {
           "artifacts": [
             {
               "algorithm": "sha256",
-              "hash": "2ebe24485c53d303f690b0ec092806a085f07af5a5aa1464f3931eec36caaa38",
-              "url": "https://files.pythonhosted.org/packages/cf/db/ce8eda256fa131af12e0a76d481711abe4681b6923c27efb9a255c9e4594/tomli-2.0.2-py3-none-any.whl"
+              "hash": "29572ef2b1f17581046b3a2227d5c611fb25ec70ca1ba8554b24b0e69331a484",
+              "url": "https://files.pythonhosted.org/packages/20/12/38679034af332785aac8774540895e234f4d07f7545804097de4b666afd8/packaging-25.0-py3-none-any.whl"
             }
           ],
-          "project_name": "tomli",
+          "project_name": "packaging",
           "requires_dists": [],
           "requires_python": ">=3.8",
-          "version": "2.0.2"
+          "version": "25.0"
+        },
+        {
+          "artifacts": [
+            {
+              "algorithm": "sha256",
+              "hash": "a45e3c82ef799803909dcf6b2f00fbb9640c3afd73c621417f4c22de90f4b762",
+              "url": "https://files.pythonhosted.org/packages/f9/f3/e05f3643bcd826585aa6a4a8f38b61adef7d8a84754c6feb9dcdcc9d4ebd/pex-2.77.0-py2.py35.py36.py37.py38.py39.py310.py311-none-any.whl"
+            }
+          ],
+          "project_name": "pex",
+          "requires_dists": [
+            "psutil>=5.3; extra == \"management\"",
+            "subprocess32>=3.2.7; python_version < \"3\" and extra == \"subprocess\""
+          ],
+          "requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,<3.16,>=2.7",
+          "version": "2.77.0"
+        },
+        {
+          "artifacts": [
+            {
+              "algorithm": "sha256",
+              "hash": "9e5c6bfa8dcc30091c74b0cf803c81fdd29d94f01992a7707bc97babb1141913",
+              "url": "https://files.pythonhosted.org/packages/bd/24/12818598c362d7f300f18e74db45963dbcb85150324092410c8b49405e42/pyproject_hooks-1.2.0-py3-none-any.whl"
+            }
+          ],
+          "project_name": "pyproject-hooks",
+          "requires_dists": [],
+          "requires_python": ">=3.7",
+          "version": "1.2.0"
         }
       ],
+      "marker": null,
       "platform_tag": [
-        "cp310",
-        "cp310",
-        "macosx_14_0_arm64"
+        "cp311",
+        "cp311",
+        "macosx_15_0_arm64"
       ]
     }
   ],
+  "only_builds": [],
+  "only_wheels": [],
+  "overridden": [],
   "path_mappings": {},
-  "pex_version": "2.1.148",
+  "pex_version": "2.77.0",
   "pip_version": "23.2",
   "prefer_older_binary": false,
   "requirements": [
-    "build==1.1.1",
-    "pex==2.20.3"
+    "build==1.3.0",
+    "pex==2.77.0"
   ],
   "requires_python": [],
   "resolver_version": "pip-2020-resolver",
   "style": "strict",
   "target_systems": [],
   "transitive": true,
-  "use_pep517": null
+  "use_pep517": null,
+  "use_system_time": false
 }
